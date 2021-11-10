@@ -33,7 +33,7 @@ new_ypos = 0
 score = 0
 
 
-timer = 3
+timer = 10
 counter_interval = 1000   #1000 represents 1 second
 timer_up = False
 
@@ -101,7 +101,7 @@ def manage_leaderboard():
   global leader_scores_list
   global leader_names_list
   global score
-  global spot
+  global tri
 
   # load all the leaderboard records into the lists
   lb.load_leaderboard(leaderboard_file_name, leader_names_list, leader_scores_list)
